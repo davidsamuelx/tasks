@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: Register(),
+      home: massages(),
     );
   }
 }
@@ -87,16 +87,15 @@ class massages extends StatelessWidget {
         backgroundColor: Colors.blue,
         centerTitle: true,
         title: Text(
-          "Massages",
+          "Messages",
           style: TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.bold,
               fontSize: 24
           ),
         ),
       ),
       body: ListView.builder(
-          itemCount: 40,
+          itemCount: 6,
           itemBuilder: (context, index) {
             return massagesItem();
           }
@@ -107,24 +106,58 @@ class massages extends StatelessWidget {
   Widget massagesItem(){
     return Container(
       decoration: BoxDecoration(
-        color: Color(0xFF222222),
+        color: Colors.white,
       ),
-      padding: EdgeInsets.fromLTRB(15, 10, 5, 10),
     child: Column(
       children: [
-        Text('Divider'),
-        Divider(
-          height: 100,
-          color: Colors.green,
-          thickness: 1,
-
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(5, 10, 10, 10),
+              child: CircleAvatar(
+                radius: 30,
+                backgroundImage:
+                NetworkImage('https://picsum.photos/id/237/200/300'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text("Claire",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                      ),
+                      SizedBox(width: 10,),
+                      Text("20:18"),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 240,
+                    child: Text("How about meeting ?aaaaaaaaaaaaaaaaaaaaaaaa",
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: Colors.black38
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Spacer(),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.navigate_next)),
+          ],
         ),
-        Text('Divider'),
         Divider(
-          height: 100,
-          color: Colors.green,
+          color: Colors.black12,
           thickness: 1,
-
         ),
       ],
     ),
