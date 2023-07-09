@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "191061850133",
+    "project_id": "flutterhti",
+    "storage_bucket": "flutterhti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191061850133:android:5f98ee385200359435b61c",
+        "android_client_info": {
+          "package_name": "com.dada.frist_project_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191061850133-o613qseoja9r70vvrjiiubomafin2tpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCaheesluBMIdDKGmXx2sIXFhu4bDRK0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191061850133-o613qseoja9r70vvrjiiubomafin2tpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191061850133:android:2c9d6a0e3938198a35b61c",
+        "android_client_info": {
+          "package_name": "com.dadacompany.appname.tasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191061850133-o613qseoja9r70vvrjiiubomafin2tpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCaheesluBMIdDKGmXx2sIXFhu4bDRK0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191061850133-o613qseoja9r70vvrjiiubomafin2tpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
